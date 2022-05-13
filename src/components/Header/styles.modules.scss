@@ -25,8 +25,18 @@
 
         transition: color 0.2s;
 
+
+        & + a {
+          margin-left: 2rem;
+        }
+
         &:hover {
-          color: white;
+          color: var(--white);
+        }
+
+        &:active {
+          color: var(--white);
+          font-weight: bold;
         }
 
         &:active::after {
@@ -35,7 +45,7 @@
           border-radius: 3px 3px 0 0;
           width: 100%;
           position: absolute;
-          bottom: 0;
+          bottom: 1px;
           left: 0;
           background: var(--yellow-500);
           

@@ -1,16 +1,19 @@
-import styles from '../Header/styles.modules.scss';
+import styles from './styles.modules.scss'
 
 import Image from 'next/image';
+import { SigninButton } from '../SignInButton';
 
 export function Header () {
     return (
         <header className={styles.headerContainer}>
             <div className={styles.headerContent}>
-                <img src="/images/logo.svg" alt="ig.news" />
+                <img src="images/logo.svg" alt="ig.news" />
                 <nav>
                     <a className={styles.active}>Home</a>
                     <a>Posts</a>
                 </nav>
+
+                <SigninButton />
             </div>
         </header>
     );
